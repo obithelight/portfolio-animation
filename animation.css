@@ -25,6 +25,7 @@ h1 {
 	top: 35%;
 	font-size: 2rem;
 	font-style: normal;
+	letter-spacing: .3rem;
 } 
 
 .middle {
@@ -37,21 +38,22 @@ h1 {
 	top: 65%;
 	font-size: 2rem;
 	font-style: italic;
+	color: #fff;
+	letter-spacing: .3rem;
 }
 
 .engineer {
-	width: 100%;
 	background: red;
-	color: #fff;
+	width: 100%;
 }
 
 main h1 span {
 	opacity: 0;
 	display: inline-block;
-	animation: dance 1s linear forwards;
+	animation: animate 1s linear forwards;
 }
 
-@keyframes dance{
+@keyframes animate{
 	0%{
 		opacity: 0;
 		transform: rotateY(90deg);
@@ -65,30 +67,80 @@ main h1 span {
 	}
 }
 
-main h1 span:nth-child(1){
+.top span:nth-child(1){
+	animation-delay: .5s;
+}
+.top span:nth-child(2){
 	animation-delay: 1s;
 }
 
-main h1 span:nth-child(2){
+.middle span:nth-child(1){
+	animation-delay: 1.75s;
+}
+
+.middle span:nth-child(2){
 	animation-delay: 2s;
 }
 
-main h1 span:nth-child(3){
+.middle span:nth-child(3){
+	animation-delay: 2.25s;
+}
+
+.middle span:nth-child(4){
+	animation-delay: 2.5s;
+}
+
+.middle span:nth-child(5){
+	animation-delay: 2.75s;
+}
+
+.middle span:nth-child(6){
 	animation-delay: 3s;
 }
 
-main h1 span:nth-child(4){
+.middle span:nth-child(7){
+	animation-delay: 3.25s;
+}
+
+.middle span:nth-child(8){
+	animation-delay: 3.5s;
+}
+
+.middle span:nth-child(9){
+	animation-delay: 3.75s;
+}
+
+.middle span:nth-child(10){
 	animation-delay: 4s;
 }
 
-main h1 span:nth-child(5){
+.middle span:nth-child(11){
+	animation-delay: 4.25s;
+}
+
+.middle span:nth-child(12){
+	animation-delay: 4.5s;
+}
+
+.middle span:nth-child(13){
+	animation-delay: 4.75s;
+}
+
+.middle span:nth-child(14){
 	animation-delay: 5s;
 }
 
-main h1 span:nth-child(6){
-	animation-delay: 6s;
+.middle span:nth-child(15){
+	animation-delay: 5.25s;
 }
 
+.below span:nth-child(1){
+	animation-delay: 5.5s;
+}
+
+.below span:nth-child(2){
+	animation-delay: 5.75s;
+}
 
 /*MEDIA QUERY*/
 
